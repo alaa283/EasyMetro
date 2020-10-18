@@ -1,0 +1,80 @@
+.shadow {
+    width: 100%;
+    height: 192px;
+    position: relative;
+    margin-top: -110px;
+    background: transparent url(../images/shadow.png) no-repeat bottom center;
+    background-size: 100% 100%; /* stretches it */
+    z-index: 9999999;
+    display: none;
+}
+
+.sb-description h3 {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.sb-description h3 a {
+    color: #4a3c27;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.nav-arrows {
+    display: none;
+}
+.nav-arrows a:hover {
+    opacity: 1;
+}
+.nav-dots {
+    background: url(../images/Icons/Slider_pager_bg.png) no-repeat top center;
+    text-align: center;
+    position: absolute;
+    bottom: -25px;
+    height: 54px;
+    width: 261px;
+    left: 234px;
+    display: none;
+    z-index: 9999;
+}
+
+.nav-dots span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 14px 9px 0px 9px;
+    background: url(../images/Icons/Slider_pager_li.png) no-repeat top right;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-dots span.nav-dot-current {
+    background: url(../images/Icons/Slider_pager_li.png) no-repeat top left;
+}
+.nav-options {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    right: 70px;
+    bottom: 0px;
+    display: none;
+}
+
+.nav-options span {
+    width: 30px;
+    height: 30px;
+    background: #cbbfae url(../images/options.png) no-repeat top left;
+    text-indent: -9000px;
+    cursor: pointer;
+    opacity: 0.7;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.nav-options span:first-child{
+    background-position: -30px 0px;
+    margin-right: 3px;
+}
+
+.nav-options span:hover {
+    opacity: 1;
+}
